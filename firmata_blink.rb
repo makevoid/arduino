@@ -3,11 +3,12 @@ require "arduino_firmata"
 arduino = ArduinoFirmata.connect
 puts "firmata version #{arduino.version}"
 
+pin = 3
 
 loop do
-  arduino.digital_write 12, true
+  arduino.digital_write pin, true
   sleep 0.2
-  arduino.digital_write 12, false
+  arduino.digital_write pin, false
   sleep 0.2
 
   # puts arduino.analog_read 0
