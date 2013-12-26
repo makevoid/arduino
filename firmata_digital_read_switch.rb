@@ -1,7 +1,7 @@
 require "arduino_firmata"
 
 arduino = ArduinoFirmata.connect
-puts "firmata version #{arduino.version}"
+#puts "firmata version #{arduino.version}"
 
 
 loop do

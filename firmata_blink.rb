@@ -3,7 +3,7 @@ require "arduino_firmata"
 arduino = ArduinoFirmata.connect
 puts "firmata version #{arduino.version}"
 
-pin = 3
+pin = 13
 
 loop do
   arduino.digital_write pin, true
